@@ -43,8 +43,9 @@ Contributor(s):
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sdorg_db</property>
-    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.url">${DB_URL}</property>
+    <property name="hibernate.connection.username">${DB_USERNAME}</property>
+    <property name="hiberntae.connection.password">${DB_PASSWORD}</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
